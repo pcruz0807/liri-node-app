@@ -4,6 +4,8 @@ var keys = require("./keys.js");
 
 var spotify = new Spotify(keys.spotify);
 
+var Spotify = require('node-spotify-api');
+
 var request = require('request');
 
 var fs = require('fs');
@@ -13,7 +15,7 @@ var moment = require('moment');
 var inquirer = require('inquirer')
 
 
-shows = function(text) {
+concertThis = function(text) {
     request('https://rest.bandsintown.com/artists/' + text + '/events?app_id=codingbootcamp', function (err, response, body) {
 
         var json = JSON.parse(body);
@@ -32,7 +34,7 @@ shows = function(text) {
     });
 };
 
-theSpotify = function(text) {
+spotifyThis = function(text) {
 
 
     spotify
@@ -57,3 +59,26 @@ theSpotify = function(text) {
         });
 };
 
+movieThis = function (text) {
+
+    request('http://www.omdbapi.com/?apikey=trilogy&t=' + text + '&tomatoes=true', function (err, response, body) {
+
+        var json = JSON.parse(body);
+        // console.log(json);
+        if (json.Response == 'False') {
+            console.log("So there is nothing for " + text +
+                "\nShowing results for default movie");
+            searchThis('movie-this');
+        } else {
+            // console.log(json);
+            console.log("\nTitle: " + json.Title +
+                "\nReleased: " + json.Year +
+                "\nRating: " + json.imdbRating +
+                "\nRotten Tomatoes Rating: " + json.tomatoRating +
+                "\nCountry: " + json.Country +
+                "\nLanguage: " + json.Language +
+                "\nPlot: " + json.Plot +
+                "\nActors: " + json.Actors);
+        }
+    });
+};
