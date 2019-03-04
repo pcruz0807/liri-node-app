@@ -2,8 +2,6 @@ require("dotenv").config();
 
 var keys = require("./keys.js");
 
-var divide = "\n----------------\n\n";
-
 var Spotify = require('node-spotify-api');
 
 var request = require('request');
@@ -30,6 +28,14 @@ concertThis = function(text) {
             console.log("\nVenue: " + json[0].venue.name +
                 "\nLocation: " + json[0].venue.city + " " + json[0].venue.region + " " + json[0].venue.country +
                 "\nEvent Date: " + moment(json[0].datetime).format("dddd, MMMM Do YYYY, h:mm:ss a"));
+
+            fs.appendFile('log.txt',"\r\n" + "\nArtist: " + text + "\r\n" + "\nVenue: " + json[0].venue.name + "\r\n" +
+            "\nLocation: " + json[0].venue.city + " " + json[0].venue.region + " " + json[0].venue.country + "\r\n" +
+            "\nEvent Date: " + moment(json[0].datetime).format("dddd, MMMM Do YYYY, h:mm:ss a") + "\r\n", function(err) {
+                if(err) {
+                    console.log(err);
+                }
+            });
         }
     });
 };
