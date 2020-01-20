@@ -205,3 +205,83 @@ Album: The Hits--Chapter One
 Song: I Want It That Way
 
 URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=217ccf1968134d3f96b3f044246c5b4e
+
+
+Artist: korn
+
+Venue: PPL Center
+
+Location: Allentown PA United States
+
+Event Date: Thursday, January 23rd 2020, 6:00:00 pm
+
+
+Artist: rammstein
+
+Venue: Wörthersee Stadion
+
+Location: Klagenfurt  Austria
+
+Event Date: Monday, May 25th 2020, 7:00:00 pm
+
+
+Title: The Waterboy
+
+Released: 1998
+
+Rating: 6.1
+
+Rotten Tomatoes Rating: N/A
+
+Country: USA
+
+Language: English
+
+Plot: A waterboy for a college football team discovers he has a unique tackling ability and becomes a member of the team.
+
+Actors: Adam Sandler, Kathy Bates, Henry Winkler, Fairuza Balk
+
+
+Artist: korn
+
+Venue: PPL Center
+
+Location: Allentown PA United States
+
+Event Date: Thursday, January 23rd 2020, 6:00:00 pm
+
+
+Artist: system of a down
+
+Venue: Ziggo Dome
+
+Location: Amsterdam  Netherlands
+
+Event Date: Wednesday, June 3rd 2020, 7:00:00 pm
+
+
+Artist: rammstein
+
+Venue: Wörthersee Stadion
+
+Location: Klagenfurt  Austria
+
+Event Date: Monday, May 25th 2020, 7:00:00 pm
+
+
+Artists: Rammstein
+
+Album: Mutter
+
+Song: Sonne
+
+URL: null
+
+
+Artists: Backstreet Boys
+
+Album: The Hits--Chapter One
+
+Song: I Want It That Way
+
+URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=217ccf1968134d3f96b3f044246c5b4e
